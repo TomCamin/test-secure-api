@@ -1,1 +1,29 @@
-Hello !
+{% extends '::base.html.twig' %}
+
+
+{% block title %}
+	{{ parent() }} | Test Project
+{% endblock %}
+
+
+
+{% block body %}
+	
+	<!-- Page Content -->
+	
+	<h1>L'Arrosoir</h1>
+	<div id="container">
+	</div>
+	
+	<!-- Backbone Templates -->
+
+	
+	<script type="text/template" id="templateVegetableSheet">
+		<div id="<%= vegetable.id %>">
+			<h1><%= vegetable.name %></h1>
+			<h2><%= vegetable.type.title %></h2>
+			<p><%= vegetable.description %></p>
+		</div>
+	</script>
+	
+{% endblock %}
