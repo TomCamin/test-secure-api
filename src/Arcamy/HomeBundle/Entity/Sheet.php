@@ -44,7 +44,12 @@ class Sheet
      */
     private $created_at;
 
-
+    /**
+     * @Gedmo\Slug(fields={"name"})
+     * @ORM\Column(name="slug", type="string")
+     */
+    private $slug;
+    
     /**
      * Get id
      *
@@ -122,5 +127,10 @@ class Sheet
     public function getCreatedAt()
     {
         return $this->created_at;
+    }
+    
+    public function getSlug()
+    {
+        return $this->slug;
     }
 }

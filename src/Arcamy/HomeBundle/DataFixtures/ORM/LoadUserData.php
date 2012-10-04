@@ -5,6 +5,7 @@ namespace Arcamy\HomeBundle\DataFixtures\ORM;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Arcamy\HomeBundle\Entity\User;
+use Arcamy\HomeBundle\Entity\Sheet;
 
 class LoadUserData implements FixtureInterface
 {
@@ -20,6 +21,14 @@ class LoadUserData implements FixtureInterface
         $userAdmin->setEnabled(true);
 
         $manager->persist($userAdmin);
+        $manager->flush();
+        
+        
+        $sheet = new Sheet();
+        $sheet->setName('Tomate');
+        $sheet->setDescription('Coucou');
+        
+        $manager->persist($sheet);
         $manager->flush();
     }
 }
