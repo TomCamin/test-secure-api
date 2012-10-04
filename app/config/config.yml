@@ -49,6 +49,8 @@ doctrine:
     orm:
         auto_generate_proxy_classes: %kernel.debug%
         auto_mapping: true
+        mappings:
+          StofDoctrineExtensionsBundle: false
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -78,3 +80,13 @@ mopa_wsse_authentication:
     provider_class: Mopa\Bundle\WSSEAuthenticationBundle\Security\Authentication\Provider\WsseAuthenticationProvider
     listener_class: Mopa\Bundle\WSSEAuthenticationBundle\Security\Firewall\WsseListener
     factory_class: Mopa\Bundle\WSSEAuthenticationBundle\Security\Factory\WsseFactory
+
+stof_doctrine_extensions:
+    default_locale: fr_FR
+    orm:
+        default:
+          loggable: false
+          sluggable: true
+          timestampable: true
+          translatable: true
+          tree: false

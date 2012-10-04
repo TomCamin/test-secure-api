@@ -1,5 +1,5 @@
 {
-    "hash": "7fe945920544d7507fa18369eebd2baf",
+    "hash": "c61ea908154ff86954c0d58c39462b1f",
     "packages": [
         {
             "name": "doctrine/common",
@@ -548,6 +548,66 @@
             "homepage": "http://friendsofsymfony.github.com",
             "keywords": [
                 "User management"
+            ]
+        },
+        {
+            "name": "gedmo/doctrine-extensions",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/l3pp4rd/DoctrineExtensions.git",
+                "reference": "4a68552b1b013c91068ec8af1321e8272739aa57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/l3pp4rd/DoctrineExtensions/zipball/4a68552b1b013c91068ec8af1321e8272739aa57",
+                "reference": "4a68552b1b013c91068ec8af1321e8272739aa57",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "doctrine/common": ">=2.2,<2.5-dev"
+            },
+            "suggest": {
+                "doctrine/orm": ">=2.1",
+                "doctrine/mongodb-odm": "*"
+            },
+            "time": "1348958981",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Gedmo": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gediminas Morkevicius",
+                    "email": "gediminas.morkevicius@gmail"
+                }
+            ],
+            "description": "Doctrine2 behavioral extensions",
+            "homepage": "http://gediminasm.org/",
+            "keywords": [
+                "tree",
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "sluggable",
+                "loggable",
+                "translatable",
+                "nestedset",
+                "sortable",
+                "timestampable"
             ]
         },
         {
@@ -1177,18 +1237,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioFrameworkExtraBundle",
-                "reference": "86a68df44eb50a64042d05a3f09548d2c21d4456"
+                "reference": "bf2ea090d602e02b975d1bf1d8ffca8f02ef8bdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sensio/SensioFrameworkExtraBundle/zipball/86a68df44eb50a64042d05a3f09548d2c21d4456",
-                "reference": "86a68df44eb50a64042d05a3f09548d2c21d4456",
+                "url": "https://github.com/sensio/SensioFrameworkExtraBundle/zipball/bf2ea090d602e02b975d1bf1d8ffca8f02ef8bdb",
+                "reference": "bf2ea090d602e02b975d1bf1d8ffca8f02ef8bdb",
                 "shasum": ""
             },
             "require": {
                 "symfony/framework-bundle": "2.1.*",
                 "doctrine/common": ">=2.1,<2.4-dev"
             },
+            "time": "1349361259",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1214,8 +1275,7 @@
             "keywords": [
                 "annotations",
                 "controllers"
-            ],
-            "time": "1348064274"
+            ]
         },
         {
             "name": "sensio/generator-bundle",
@@ -1264,6 +1324,68 @@
             ],
             "description": "This bundle generates code for you",
             "time": "1348030981"
+        },
+        {
+            "name": "stof/doctrine-extensions-bundle",
+            "version": "dev-master",
+            "target-dir": "Stof/DoctrineExtensionsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stof/StofDoctrineExtensionsBundle",
+                "reference": "773b37310ca244570032541be3c8ab27b814a83f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/stof/StofDoctrineExtensionsBundle/zipball/773b37310ca244570032541be3c8ab27b814a83f",
+                "reference": "773b37310ca244570032541be3c8ab27b814a83f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "2.1.*",
+                "gedmo/doctrine-extensions": ">=2.3-dev"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "*",
+                "doctrine/mongodb-odm-bundle": "2.1.*"
+            },
+            "time": "1349111035",
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Stof\\DoctrineExtensionsBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                }
+            ],
+            "description": "Integration of the gedmo/doctrine-extensions with Symfony2",
+            "homepage": "https://github.com/stof/StofDoctrineExtensionsBundle",
+            "keywords": [
+                "tree",
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "sluggable",
+                "loggable",
+                "translatable",
+                "nestedset",
+                "sortable",
+                "timestampable"
+            ]
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1684,6 +1806,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "sensio/buzz-bundle": 20,
-        "doctrine/doctrine-fixtures-bundle": 20
+        "doctrine/doctrine-fixtures-bundle": 20,
+        "stof/doctrine-extensions-bundle": 20
     }
 }

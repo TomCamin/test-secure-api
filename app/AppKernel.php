@@ -26,6 +26,7 @@ class AppKernel extends Kernel
             new Mopa\Bundle\WSSEAuthenticationBundle\MopaWSSEAuthenticationBundle(),
             new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
