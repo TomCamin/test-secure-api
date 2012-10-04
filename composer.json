@@ -22,7 +22,8 @@
         "friendsofsymfony/user-bundle": "*",
         "sensio/buzz-bundle": "dev-master",
         "mopa/wsse-authentication-bundle": "*",
-        "doctrine/doctrine-fixtures-bundle": "dev-master"
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "stof/doctrine-extensions-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
