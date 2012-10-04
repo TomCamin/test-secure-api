@@ -1,5 +1,5 @@
 {
-    "hash": "fe46031e6f89a7aca32f9596a6d66a07",
+    "hash": "383bf657844eaa2b83f6b853a4568c21",
     "packages": [
         {
             "name": "doctrine/common",
@@ -839,6 +839,51 @@
             ]
         },
         {
+            "name": "kriswallsmith/buzz",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/kriswallsmith/Buzz.git",
+                "reference": "988bf14201ffbed940f23b42f87302e6adec4c21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/kriswallsmith/Buzz/zipball/988bf14201ffbed940f23b42f87302e6adec4c21",
+                "reference": "988bf14201ffbed940f23b42f87302e6adec4c21",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "time": "1345206213",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Buzz": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Lightweight HTTP client",
+            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "keywords": [
+                "curl",
+                "http client"
+            ]
+        },
+        {
             "name": "monolog/monolog",
             "version": "dev-master",
             "source": {
@@ -893,6 +938,97 @@
                 "logging"
             ],
             "time": "1347983448"
+        },
+        {
+            "name": "mopa/wsse-authentication-bundle",
+            "version": "dev-master",
+            "target-dir": "Mopa/Bundle/WSSEAuthenticationBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phiamo/MopaWSSEAuthenticationBundle",
+                "reference": "eb9e1f12861fa9dfd009ab927f4ba798e660e899"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/phiamo/MopaWSSEAuthenticationBundle/zipball/eb9e1f12861fa9dfd009ab927f4ba798e660e899",
+                "reference": "eb9e1f12861fa9dfd009ab927f4ba798e660e899",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/symfony": "2.1.*"
+            },
+            "time": "1338493102",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Mopa\\Bundle\\WSSEAuthenticationBundle": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Philipp A. Mohrenweiser",
+                    "email": "phiamo@googlemail.com",
+                    "homepage": "http://bootstrap.mohrenweiserpartner.de"
+                },
+                {
+                    "name": "David Joos",
+                    "homepage": "http://www.mopastudios.co.uk/"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/mopastudios/MopaWSSEAuthenticationBundle/contributors"
+                }
+            ],
+            "description": "a simple and easy way to implement WSSE authentication into Symfony2 applications",
+            "keywords": [
+                "Symfony2",
+                "Authentication",
+                "wsse"
+            ]
+        },
+        {
+            "name": "sensio/buzz-bundle",
+            "version": "dev-master",
+            "target-dir": "Sensio/Bundle/BuzzBundle",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/sensio/SensioBuzzBundle",
+                "reference": "0754d7dd155efc4f85de60993571b0b6a5aaccb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/sensio/SensioBuzzBundle/zipball/0754d7dd155efc4f85de60993571b0b6a5aaccb9",
+                "reference": "0754d7dd155efc4f85de60993571b0b6a5aaccb9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "kriswallsmith/buzz": ">= 0.6"
+            },
+            "time": "1338188924",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Sensio\\Bundle\\BuzzBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marc Weistroff",
+                    "email": "marc.weistroff@sensio.com"
+                }
+            ],
+            "description": "Bundle around the Buzz HTTP client",
+            "homepage": "https://github.com/sensio/SensioBuzzBundle",
+            "keywords": [
+                "http client",
+                "buzz"
+            ]
         },
         {
             "name": "sensio/distribution-bundle",
@@ -1452,7 +1588,7 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ]
+    "stability-flags": {
+        "sensio/buzz-bundle": 20
+    }
 }

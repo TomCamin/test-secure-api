@@ -23,6 +23,8 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle($this),
+            new Mopa\Bundle\WSSEAuthenticationBundle\MopaWSSEAuthenticationBundle(),
+            new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
